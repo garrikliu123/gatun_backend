@@ -7,19 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d9dbc9-a221-41d3-9bb7-5dfc815f1300" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/apera-backend.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apera-backend-1.0-SNAPSHOT.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/apera/backend/BaseTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../apera-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../apera-frontend" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +325,7 @@
       <workItem from="1585544199129" duration="7236000" />
       <workItem from="1585759801994" duration="29379000" />
       <workItem from="1585980055212" duration="20454000" />
-      <workItem from="1586285716024" duration="3424000" />
+      <workItem from="1586285716024" duration="4209000" />
     </task>
     <servers />
   </component>
@@ -369,22 +361,22 @@
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
     <state x="1708" y="418" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.2560.1057@0.23.2560.1057" timestamp="1585932743166" />
-    <state width="1238" height="372" key="GridCell.Tab.0.bottom" timestamp="1586289921538">
+    <state width="1238" height="372" key="GridCell.Tab.0.bottom" timestamp="1586290949872">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.bottom/0.23.2560.1057@0.23.2560.1057" timestamp="1586289921538" />
-    <state width="1238" height="372" key="GridCell.Tab.0.center" timestamp="1586289921538">
+    <state width="1238" height="372" key="GridCell.Tab.0.bottom/0.23.2560.1057@0.23.2560.1057" timestamp="1586290949872" />
+    <state width="1238" height="372" key="GridCell.Tab.0.center" timestamp="1586290949870">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.center/0.23.2560.1057@0.23.2560.1057" timestamp="1586289921538" />
-    <state width="1238" height="372" key="GridCell.Tab.0.left" timestamp="1586289921537">
+    <state width="1238" height="372" key="GridCell.Tab.0.center/0.23.2560.1057@0.23.2560.1057" timestamp="1586290949870" />
+    <state width="1238" height="372" key="GridCell.Tab.0.left" timestamp="1586290949870">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.left/0.23.2560.1057@0.23.2560.1057" timestamp="1586289921537" />
-    <state width="1238" height="372" key="GridCell.Tab.0.right" timestamp="1586289921538">
+    <state width="1238" height="372" key="GridCell.Tab.0.left/0.23.2560.1057@0.23.2560.1057" timestamp="1586290949870" />
+    <state width="1238" height="372" key="GridCell.Tab.0.right" timestamp="1586290949871">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.right/0.23.2560.1057@0.23.2560.1057" timestamp="1586289921538" />
+    <state width="1238" height="372" key="GridCell.Tab.0.right/0.23.2560.1057@0.23.2560.1057" timestamp="1586290949871" />
     <state width="846" height="265" key="GridCell.Tab.1.bottom" timestamp="1586286417000">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
