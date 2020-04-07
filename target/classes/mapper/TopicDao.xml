@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apera.backend.dao.TopicDao">
+    <resultMap id="topicMap" type="com.apera.backend.entity.Topic">
+        <id column="topic_id" property="topicId"/>
+        <result column="topic_name" property="topicName"/>
+        <result column="topic_type" property="topicType"/>
+        <result column="topic_image" property="topicImage"/>
+    </resultMap>
+
+    <select id="queryTopicList" resultType="com.apera.backend.entity.Topic" resultMap="topicMap">
+        SELECT *
+        FROM ap_topic
+        ORDER BY topic_name ASC
+    </select>
+
+    <insert id="insertTopic" parameterType="com.apera.backend.entity.Topic">
+        INSERT INTO ap_topic(topic_id, topic_name, topic_type, topic_image)
+        VALUES (#{topicId}, #{topicName}, #{topicType}, #{topicImage})
+    </insert>
+
+    <update id="updateTopic" parameterType="com.apera.backend.entity.Topic">
+        update ap_topic
+        <set>
+            <if test="topicName != null">topic_name = #{topicName},</if>
+            <if test="topicType != null">topic_type = #{topicType},</if>
+            <if test="topicImage != null">topic_image = #{topicImage}</if>
+        </set>
+        WHERE topic_id = #{topicId}
+    </update>
+
+    <delete id="deleteTopic">
+        DELETE
+        FROM ap_topic
+        WHERE topic_id = #{topicId}
+    </delete>
+</mapper>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apera.backend.dao.HomeSectionDao">
+    <resultMap id="sectionMap" type="com.apera.backend.entity.HomeSection">
+        <id column="section_id" property="sectionId"/>
+        <result column="section_data" property="sectionData"/>
+    </resultMap>
+
+    <select id="querySectionList" resultType="com.apera.backend.entity.HomeSection" resultMap="sectionMap">
+        SELECT *
+        FROM ap_home_section
+    </select>
+
+    <insert id="insertSection" parameterType="com.apera.backend.entity.HomeSection">
+        INSERT INTO ap_home_section(section_id, section_data)
+        VALUES (#{sectionId}, #{sectionData})
+    </insert>
+
+    <update id="updateSection" parameterType="com.apera.backend.entity.HomeSection">
+        update ap_home_section
+        <set>
+            <if test="sectionData != null">section_data = #{sectionData}</if>
+        </set>
+        WHERE section_id = #{sectionId}
+    </update>
+
+    <delete id="deleteSection">
+        DELETE
+        FROM ap_home_section
+        WHERE section_id = #{sectionId}
+    </delete>
+</mapper>

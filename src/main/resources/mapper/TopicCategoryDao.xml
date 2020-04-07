@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apera.backend.dao.TopicCategoryDao">
+
+    <resultMap id="topicCategoryMap" type="com.apera.backend.entity.TopicCategory">
+        <id column="category_id" property="categoryId"/>
+        <result column="topic_id" property="topicId"/>
+    </resultMap>
+
+    <select id="queryAllTopicCategory" resultType="com.apera.backend.entity.TopicCategory"
+            resultMap="topicCategoryMap">
+        SELECT *
+        FROM ap_topic_category
+    </select>
+
+    <insert id="insertTopicCategory" parameterType="java.util.List">
+        INSERT INTO ap_topic_category(category_id, topic_id)
+        VALUES
+        <foreach collection="list" item="topicCategory" separator=",">
+            (#{topicCategory.categoryId}, #{topicCategory.topicId})
+        </foreach>
+    </insert>
+
+    <delete id="deleteTopicCategoryByTopicId">
+        DELETE
+        FROM ap_topic_category
+        WHERE topic_id = #{topicId}
+    </delete>
+</mapper>

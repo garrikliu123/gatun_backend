@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apera.backend.dao.CategoryDao">
+    <resultMap id="categoryMap" type="com.apera.backend.entity.Category">
+        <id column="category_id" property="categoryId"/>
+        <result column="category_name" property="categoryName"/>
+        <result column="category_type" property="categoryType"/>
+    </resultMap>
+
+    <select id="queryCategoryList" resultType="com.apera.backend.entity.Category" resultMap="categoryMap">
+        SELECT *
+        FROM ap_category
+        ORDER BY category_name;
+    </select>
+
+    <insert id="insertCategory" parameterType="com.apera.backend.entity.Category">
+        INSERT INTO ap_category(category_id, category_name, category_type)
+        VALUES (#{categoryId}, #{categoryName}, #{categoryType})
+    </insert>
+
+    <update id="updateCategory" parameterType="com.apera.backend.entity.Category">
+        update ap_category
+        <set>
+            <if test="categoryName != null">category_name = #{categoryName},</if>
+            <if test="categoryType != null">category_type = #{categoryType}</if>
+        </set>
+        WHERE category_id = #{categoryId}
+    </update>
+
+    <delete id="deleteCategory">
+        DELETE
+        FROM ap_category
+        WHERE category_id = #{categoryId}
+    </delete>
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apera.backend.dao.ProductCategoryDao">
+
+    <resultMap id="productCategoryMap" type="com.apera.backend.entity.ProductCategory">
+        <id column="category_id" property="categoryId"/>
+        <result column="product_name" property="productName"/>
+        <result column="category_type" property="categoryType"/>
+    </resultMap>
+
+    <select id="queryProductCategory" resultType="java.lang.String" parameterType="java.util.List">
+        SELECT product_id
+        FROM ap_product_category
+        <where>
+            category_id in
+            <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+        </where>
+    </select>
+
+    <select id="queryProductCategoryByProductId" resultType="com.apera.backend.entity.ProductCategory"
+            resultMap="productCategoryMap">
+        SELECT *
+        FROM ap_product_category
+        WHERE product_id = #{productId}
+    </select>
+
+    <select id="queryAllProductCategory" resultType="com.apera.backend.entity.ProductCategory"
+            resultMap="productCategoryMap">
+        SELECT *
+        FROM ap_product_category
+    </select>
+
+    <insert id="insertProductCategory" parameterType="java.util.List">
+        INSERT INTO ap_product_category(category_id, product_id, category_type)
+        VALUES
+        <foreach collection="list" item="productCategory" separator=",">
+            (#{productCategory.categoryId}, #{productCategory.productId}, #{productCategory.categoryType})
+        </foreach>
+    </insert>
+
+    <delete id="deleteProductCategoryByProductId">
+        DELETE
+        FROM ap_product_category
+        WHERE product_id = #{productId}
+    </delete>
+</mapper>
