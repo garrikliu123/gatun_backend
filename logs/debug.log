@@ -592,3 +592,9 @@
 2020-04-07 20:17:38.676 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
 2020-04-07 20:17:38.745 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
 2020-04-07 20:17:38.812 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
+2020-04-07 20:28:35.695 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-07 20:28:35.752 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-07 20:28:35.791 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
+2020-04-07 20:37:29.249 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-07 20:37:29.334 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-07 20:37:29.367 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
