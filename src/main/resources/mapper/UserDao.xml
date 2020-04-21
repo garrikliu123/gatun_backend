@@ -4,7 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.apera.backend.dao.UserDao">
     <resultMap id="userMap" type="com.apera.backend.entity.User">
-        <id column="user_email" property="userEmail"/>
+        <id column="user_id" property="userId"/>
+        <result column="user_firstname" property="userFirstname"/>
+        <result column="user_lastname" property="userLastname"/>
+        <result column="user_email" property="userEmail"/>
         <result column="user_password" property="userPassword"/>
         <result column="user_type" property="userType"/>
     </resultMap>
@@ -21,22 +24,31 @@
         WHERE user_email = #{userEmail}
     </select>
 
+    <select id="queryUserById" resultType="com.apera.backend.entity.User" resultMap="userMap">
+        SELECT *
+        FROM ap_user
+        WHERE user_id = #{userId}
+    </select>
+
     <insert id="insertUser" parameterType="com.apera.backend.entity.User">
-        INSERT INTO ap_user(user_email, user_password, user_type)
-        VALUES (#{userEmail}, #{userPassword}, #{userType})
+        INSERT INTO ap_user(user_id, user_firstname, user_lastname, user_email, user_password, user_type)
+        VALUES (#{userId}, #{userFirstname}, #{userLastname}, #{userEmail}, #{userPassword}, #{userType})
     </insert>
 
     <update id="updateUser" parameterType="com.apera.backend.entity.User">
         update ap_user
         <set>
-            <if test="userPassword != null">user_password = #{userPassword}</if>
+            <if test="userPassword != null">user_password = #{userPassword},</if>
+            <if test="userFirstname != null">user_firstname = #{userFirstname},</if>
+            <if test="userLastname != null">user_lastname = #{userLastname},</if>
+            <if test="userEmail != null">user_email = #{userEmail}</if>
         </set>
-        WHERE user_email = #{userEmail}
+        WHERE user_id = #{userId}
     </update>
 
     <delete id="deleteUser">
         DELETE
         FROM ap_user
-        WHERE user_email = #{userEmail}
+        WHERE user_id = #{userId}
     </delete>
 </mapper>

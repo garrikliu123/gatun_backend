@@ -15,4 +15,6 @@ public interface UserDao {
   List<User> queryUserList();
 
   User queryUserByEmail(String userEmail);
+
+  User queryUserById(String userId);
 }

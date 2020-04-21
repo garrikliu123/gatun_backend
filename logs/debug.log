@@ -1,600 +1,829 @@
-2020-04-07 00:00:35.912 [qtp1686151267-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:00:35.920 [qtp1686151267-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:00:35.952 [qtp1686151267-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:00:36.281 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:00:36.283 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:00:36.283 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:00:36.283 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:00:36.286 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:00:36.286 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:00:36.401 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:00:36.402 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:00:36.408 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:00:36.484 [qtp1686151267-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:00:36.484 [qtp1686151267-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:00:36.485 [qtp1686151267-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:00:36.619 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:00:36.619 [qtp1686151267-20] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:00:36.619 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:00:36.619 [qtp1686151267-20] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:00:36.620 [qtp1686151267-20] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:00:36.620 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:00:36.782 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:00:36.783 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:00:36.784 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:01:49.977 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:01:49.978 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:01:50.009 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:01:50.440 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:01:50.440 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:01:50.440 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:01:50.440 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:01:50.443 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:01:50.443 [qtp1686151267-46] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:01:50.631 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:01:50.631 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:01:50.638 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:01:50.724 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:01:50.725 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:01:50.726 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:01:50.750 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:01:50.751 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:01:50.752 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:01:50.755 [qtp1686151267-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:01:50.756 [qtp1686151267-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:01:50.757 [qtp1686151267-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:01:50.916 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:01:50.917 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:01:50.919 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:02:10.478 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:02:10.479 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:02:10.499 [qtp1686151267-50] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:02:10.836 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:02:10.836 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:02:10.836 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:02:10.836 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:02:10.839 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:02:10.839 [qtp1686151267-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:02:11.065 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:02:11.065 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:02:11.071 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:02:11.189 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:02:11.189 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:02:11.191 [qtp1686151267-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:02:11.260 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:02:11.261 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:02:11.261 [qtp1686151267-52] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:02:11.261 [qtp1686151267-52] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:02:11.262 [qtp1686151267-44] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:02:11.262 [qtp1686151267-52] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:02:11.463 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:02:11.464 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:02:11.465 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:02:49.295 [qtp1686151267-50] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:02:49.301 [qtp1686151267-50] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:02:49.302 [qtp1686151267-50] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:05:57.680 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:05:57.681 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:05:57.743 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:05:57.777 [qtp1686151267-49] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:05:57.778 [qtp1686151267-49] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:05:57.780 [qtp1686151267-49] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:05:57.794 [qtp1686151267-44] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:05:57.794 [qtp1686151267-44] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:05:57.797 [qtp1686151267-44] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:05:57.822 [qtp1686151267-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:05:57.822 [qtp1686151267-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:05:57.828 [qtp1686151267-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:05:57.852 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:05:57.852 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:05:57.854 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:05:57.876 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:05:57.876 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:05:57.877 [qtp1686151267-49] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:05:57.878 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:05:57.878 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:05:57.881 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:45:11.865 [qtp1686151267-55] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:45:11.868 [qtp1686151267-55] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:45:11.897 [qtp1686151267-55] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:45:11.968 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:45:11.969 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:45:11.969 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:45:11.969 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:45:11.971 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:45:11.972 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:45:11.992 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:45:11.992 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:45:11.999 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:45:12.019 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:45:12.020 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:45:12.022 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:45:12.039 [qtp1686151267-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:45:12.039 [qtp1686151267-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:45:12.041 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:45:12.041 [qtp1686151267-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:45:12.041 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:45:12.044 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:45:12.109 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:45:12.110 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:45:12.112 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:45:37.138 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:45:37.138 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:45:37.209 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:45:37.244 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:45:37.245 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:45:37.248 [qtp1686151267-44] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:45:37.248 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:45:37.248 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:45:37.250 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:45:37.320 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:45:37.321 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:45:37.326 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:45:37.360 [qtp1686151267-46] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:45:37.360 [qtp1686151267-46] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:45:37.362 [qtp1686151267-46] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:45:37.395 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:45:37.396 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:45:37.397 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:45:37.409 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:45:37.409 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:45:37.411 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:45:37.480 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:45:37.481 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:45:37.486 [qtp1686151267-19] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:47:19.568 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:47:19.568 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:47:19.595 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:47:19.790 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:47:19.790 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:47:19.791 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:47:19.791 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:47:19.794 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:47:19.794 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:47:19.971 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:47:19.972 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:47:19.976 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:47:20.026 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:47:20.027 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:47:20.028 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:47:20.168 [qtp1686151267-55] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:47:20.169 [qtp1686151267-55] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:47:20.169 [qtp1686151267-46] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:47:20.169 [qtp1686151267-46] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:47:20.170 [qtp1686151267-46] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:47:20.170 [qtp1686151267-55] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:47:20.233 [qtp1686151267-53] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:47:20.233 [qtp1686151267-53] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:47:20.235 [qtp1686151267-53] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:49:25.496 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:49:25.497 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:49:25.512 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:49:25.665 [qtp1686151267-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:49:25.665 [qtp1686151267-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:49:25.667 [qtp1686151267-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:49:25.698 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:49:25.698 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:49:25.700 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:49:25.762 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:49:25.763 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:49:25.768 [qtp1686151267-46] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:49:25.826 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:49:25.827 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:49:25.828 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:49:25.894 [qtp1686151267-58] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:49:25.894 [qtp1686151267-58] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:49:25.895 [qtp1686151267-58] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:49:25.896 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:49:25.896 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:49:25.898 [qtp1686151267-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:49:26.013 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:49:26.014 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:49:26.021 [qtp1686151267-46] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:51:06.426 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:51:06.426 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:51:06.441 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:51:06.465 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:51:06.465 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:51:06.465 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:51:06.465 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:51:06.466 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:51:06.467 [qtp1686151267-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:51:06.481 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:51:06.481 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:51:06.486 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:51:06.503 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:51:06.503 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:51:06.504 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:51:06.519 [qtp1686151267-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:51:06.520 [qtp1686151267-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:51:06.522 [qtp1686151267-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:51:06.523 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:51:06.523 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:51:06.524 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:53:27.634 [qtp1686151267-61] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:53:27.634 [qtp1686151267-61] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:53:27.649 [qtp1686151267-61] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:53:27.796 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:53:27.796 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:53:27.797 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:53:27.797 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:53:27.798 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:53:27.798 [qtp1686151267-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:53:27.870 [qtp1686151267-57] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:53:27.870 [qtp1686151267-57] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:53:27.873 [qtp1686151267-57] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:53:27.915 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:53:27.915 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:53:27.916 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:53:28.135 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:53:28.135 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:53:28.135 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:53:28.135 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:53:28.136 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:53:28.136 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:53:28.207 [qtp1686151267-57] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:53:28.207 [qtp1686151267-57] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:53:28.215 [qtp1686151267-57] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:53:32.279 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:53:32.279 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:53:32.296 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:53:32.442 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:53:32.443 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:53:32.445 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:53:32.446 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:53:32.446 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:53:32.447 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:53:32.517 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:53:32.518 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:53:32.521 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:53:32.682 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:53:32.682 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:53:32.689 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:53:32.787 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:53:32.787 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:53:32.788 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:53:32.788 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:53:32.789 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:53:32.789 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:53:32.862 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:53:32.863 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:53:32.865 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:53:39.203 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:53:39.203 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:53:39.225 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:53:39.394 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:53:39.395 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:53:39.396 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:53:39.398 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:53:39.398 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:53:39.400 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:53:39.539 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:53:39.540 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:53:39.545 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:53:39.635 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:53:39.635 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:53:39.637 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:53:39.684 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:53:39.685 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:53:39.687 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:53:39.689 [qtp1686151267-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:53:39.689 [qtp1686151267-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:53:39.691 [qtp1686151267-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:53:39.837 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:53:39.837 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:53:39.838 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:53:45.162 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:53:45.163 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:53:45.181 [qtp1686151267-62] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:53:45.354 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:53:45.356 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:53:45.357 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:53:45.357 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:53:45.358 [qtp1686151267-19] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:53:45.358 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:53:45.929 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:53:45.929 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:53:45.933 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:53:46.020 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:53:46.020 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:53:46.022 [qtp1686151267-62] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:53:46.122 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:53:46.123 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:53:46.124 [qtp1686151267-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:53:46.124 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:53:46.124 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:53:46.125 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:53:46.231 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 00:53:46.232 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 00:53:46.232 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 00:57:02.624 [qtp1686151267-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:57:02.624 [qtp1686151267-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:57:02.641 [qtp1686151267-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:57:02.923 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:57:02.924 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:57:02.924 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:57:02.924 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:57:02.926 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:57:02.927 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:57:03.068 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:57:03.068 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:57:03.073 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:57:03.237 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:57:03.237 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:57:03.240 [qtp1686151267-19] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:57:03.309 [qtp1686151267-61] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:57:03.311 [qtp1686151267-61] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:57:03.312 [qtp1686151267-61] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:57:03.328 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:57:03.329 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:57:03.335 [qtp1686151267-57] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:57:43.028 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:57:43.029 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:57:43.058 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:57:43.441 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:57:43.442 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:57:43.442 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:57:43.442 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:57:43.443 [qtp1686151267-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:57:43.444 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:57:43.730 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:57:43.730 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:57:43.734 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:57:43.854 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:57:43.854 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:57:43.855 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:57:43.936 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:57:43.936 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:57:43.937 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:57:43.937 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:57:43.938 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:57:43.938 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:58:05.226 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:58:05.227 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:58:05.265 [qtp1686151267-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:58:05.443 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:58:05.444 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:58:05.444 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:58:05.444 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:58:05.447 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:58:05.448 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:58:05.550 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:58:05.550 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:58:05.555 [qtp1686151267-53] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:58:05.738 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:58:05.738 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:58:05.740 [qtp1686151267-57] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:58:06.099 [qtp1686151267-19] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:58:06.099 [qtp1686151267-65] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:58:06.099 [qtp1686151267-19] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:58:06.099 [qtp1686151267-65] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:58:06.104 [qtp1686151267-19] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:58:06.104 [qtp1686151267-65] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:58:27.967 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:58:27.968 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:58:27.987 [qtp1686151267-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:58:28.232 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:58:28.232 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:58:28.232 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:58:28.232 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:58:28.234 [qtp1686151267-57] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:58:28.235 [qtp1686151267-53] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:58:28.313 [qtp1686151267-61] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:58:28.313 [qtp1686151267-61] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:58:28.319 [qtp1686151267-61] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:58:28.467 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:58:28.468 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:58:28.469 [qtp1686151267-59] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:58:28.634 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:58:28.635 [qtp1686151267-65] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:58:28.635 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:58:28.635 [qtp1686151267-65] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:58:28.636 [qtp1686151267-65] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:58:28.636 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 00:58:43.209 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 00:58:43.210 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 00:58:43.239 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 00:58:43.414 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 00:58:43.415 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 00:58:43.418 [qtp1686151267-59] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 00:58:43.421 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 00:58:43.422 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 00:58:43.429 [qtp1686151267-57] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 00:58:43.560 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 00:58:43.560 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 00:58:43.564 [qtp1686151267-19] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 00:58:43.685 [qtp1686151267-61] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 00:58:43.686 [qtp1686151267-61] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 00:58:43.688 [qtp1686151267-61] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 00:58:43.884 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 00:58:43.885 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 00:58:43.885 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 00:58:43.885 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 00:58:43.886 [qtp1686151267-53] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 00:58:43.886 [qtp1686151267-57] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 01:19:19.900 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 01:19:19.900 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 01:19:19.917 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 01:19:20.168 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 01:19:20.168 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 01:19:20.169 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 01:19:20.170 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 01:19:20.171 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 01:19:20.172 [qtp1686151267-61] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 01:19:20.279 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 01:19:20.279 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 01:19:20.283 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 01:19:20.458 [qtp1686151267-53] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 01:19:20.458 [qtp1686151267-53] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 01:19:20.459 [qtp1686151267-53] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 01:19:20.499 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 01:19:20.500 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 01:19:20.500 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 01:19:20.500 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 01:19:20.501 [qtp1686151267-61] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 01:19:20.501 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 01:19:36.571 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 01:19:36.575 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 01:19:36.577 [qtp1686151267-59] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 01:20:38.917 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 01:20:38.918 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 01:20:38.941 [qtp1686151267-53] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 01:20:39.287 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 01:20:39.287 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 01:20:39.287 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 01:20:39.288 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 01:20:39.292 [qtp1686151267-19] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 01:20:39.294 [qtp1686151267-65] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 01:20:39.472 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 01:20:39.472 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 01:20:39.476 [qtp1686151267-59] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 01:20:39.847 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 01:20:39.847 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 01:20:39.848 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 01:20:39.869 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 01:20:39.870 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 01:20:39.871 [qtp1686151267-53] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 01:20:39.931 [qtp1686151267-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 01:20:39.931 [qtp1686151267-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 01:20:39.932 [qtp1686151267-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 01:20:40.146 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 01:20:40.146 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 01:20:40.147 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 01:21:01.317 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 01:21:01.317 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 01:21:01.331 [qtp1686151267-51] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 01:21:01.416 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 01:21:01.417 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 01:21:01.418 [qtp1686151267-53] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 01:21:01.419 [qtp1686151267-70] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 01:21:01.419 [qtp1686151267-70] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 01:21:01.421 [qtp1686151267-70] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 01:21:01.483 [qtp1686151267-65] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 01:21:01.483 [qtp1686151267-65] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 01:21:01.487 [qtp1686151267-65] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 01:21:01.519 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 01:21:01.520 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 01:21:01.521 [qtp1686151267-51] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 01:21:01.601 [qtp1686151267-59] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 01:21:01.601 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 01:21:01.601 [qtp1686151267-59] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 01:21:01.601 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 01:21:01.602 [qtp1686151267-59] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 01:21:01.602 [qtp1686151267-19] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 01:21:01.763 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 01:21:01.764 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 01:21:01.765 [qtp1686151267-65] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 14:55:44.826 [qtp1076847093-21] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 14:55:45.040 [qtp1076847093-21] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 14:55:45.131 [qtp1076847093-21] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 14:58:06.380 [qtp1076847093-16] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 14:58:06.381 [qtp1076847093-16] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 14:58:06.401 [qtp1076847093-16] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 14:58:06.528 [qtp1076847093-15] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 14:58:06.529 [qtp1076847093-15] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 14:58:06.534 [qtp1076847093-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 14:58:06.535 [qtp1076847093-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 14:58:06.547 [qtp1076847093-15] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 14:58:06.552 [qtp1076847093-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 14:58:06.590 [qtp1076847093-23] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 14:58:06.590 [qtp1076847093-23] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 14:58:06.595 [qtp1076847093-23] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 14:58:06.628 [qtp1076847093-29] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 14:58:06.629 [qtp1076847093-29] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 14:58:06.634 [qtp1076847093-29] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 14:58:06.669 [qtp1076847093-24] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 14:58:06.669 [qtp1076847093-24] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 14:58:06.671 [qtp1076847093-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 14:58:06.672 [qtp1076847093-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 14:58:06.673 [qtp1076847093-24] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 14:58:06.676 [qtp1076847093-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 14:58:06.784 [qtp1076847093-23] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 14:58:06.785 [qtp1076847093-23] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 14:58:06.790 [qtp1076847093-23] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 15:48:38.329 [qtp606548741-15] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 15:48:38.391 [qtp606548741-15] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 15:48:38.486 [qtp606548741-15] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 15:49:04.943 [qtp606548741-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 15:49:04.944 [qtp606548741-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 15:49:04.962 [qtp606548741-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 5
-2020-04-07 15:49:05.050 [qtp606548741-20] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 15:49:05.050 [qtp606548741-20] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 15:49:05.055 [qtp606548741-16] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 15:49:05.056 [qtp606548741-16] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 15:49:05.061 [qtp606548741-20] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 13
-2020-04-07 15:49:05.073 [qtp606548741-16] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 47
-2020-04-07 15:49:05.116 [qtp606548741-12] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 15:49:05.116 [qtp606548741-12] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 15:49:05.123 [qtp606548741-12] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
-2020-04-07 15:49:05.152 [qtp606548741-13] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 15:49:05.152 [qtp606548741-13] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 15:49:05.157 [qtp606548741-13] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 4
-2020-04-07 15:49:05.191 [qtp606548741-15] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 15:49:05.191 [qtp606548741-15] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 15:49:05.194 [qtp606548741-11] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 15:49:05.195 [qtp606548741-11] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 15:49:05.197 [qtp606548741-15] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 9
-2020-04-07 15:49:05.203 [qtp606548741-11] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 6
-2020-04-07 15:49:05.297 [qtp606548741-17] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 15:49:05.298 [qtp606548741-17] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 15:49:05.304 [qtp606548741-17] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 16:22:49.129 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 16:22:49.176 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 16:22:49.216 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
-2020-04-07 16:26:04.932 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 16:26:04.933 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 16:26:04.934 [qtp1352913142-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
-2020-04-07 16:26:05.031 [qtp1352913142-16] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 16:26:05.033 [qtp1352913142-16] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 16:26:05.036 [qtp1352913142-16] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 0
-2020-04-07 16:26:05.049 [qtp1352913142-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 16:26:05.050 [qtp1352913142-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 16:26:05.051 [qtp1352913142-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 0
-2020-04-07 16:26:05.081 [qtp1352913142-15] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 16:26:05.081 [qtp1352913142-15] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 16:26:05.082 [qtp1352913142-15] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 0
-2020-04-07 16:26:05.105 [qtp1352913142-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 16:26:05.106 [qtp1352913142-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 16:26:05.107 [qtp1352913142-18] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 0
-2020-04-07 16:26:05.135 [qtp1352913142-22] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 16:26:05.136 [qtp1352913142-22] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 16:26:05.138 [qtp1352913142-22] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 0
-2020-04-07 16:26:05.139 [qtp1352913142-17] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 16:26:05.140 [qtp1352913142-17] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 16:26:05.146 [qtp1352913142-17] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
-2020-04-07 16:26:05.185 [qtp1352913142-35] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 16:26:05.186 [qtp1352913142-35] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 16:26:05.192 [qtp1352913142-35] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 20:05:16.148 [qtp1955502880-23] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 20:05:16.197 [qtp1955502880-23] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 20:05:16.236 [qtp1955502880-23] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
-2020-04-07 20:05:16.341 [qtp1955502880-17] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
-2020-04-07 20:05:16.342 [qtp1955502880-17] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
-2020-04-07 20:05:16.349 [qtp1955502880-17] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 0
-2020-04-07 20:05:16.411 [qtp1955502880-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
-2020-04-07 20:05:16.412 [qtp1955502880-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
-2020-04-07 20:05:16.418 [qtp1955502880-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 0
-2020-04-07 20:05:16.443 [qtp1955502880-22] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
-2020-04-07 20:05:16.444 [qtp1955502880-22] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
-2020-04-07 20:05:16.450 [qtp1955502880-22] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 0
-2020-04-07 20:05:16.514 [qtp1955502880-21] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
-2020-04-07 20:05:16.515 [qtp1955502880-21] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
-2020-04-07 20:05:16.521 [qtp1955502880-21] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 0
-2020-04-07 20:05:16.583 [qtp1955502880-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
-2020-04-07 20:05:16.583 [qtp1955502880-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
-2020-04-07 20:05:16.586 [qtp1955502880-23] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
-2020-04-07 20:05:16.587 [qtp1955502880-23] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
-2020-04-07 20:05:16.590 [qtp1955502880-16] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 0
-2020-04-07 20:05:16.591 [qtp1955502880-23] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
-2020-04-07 20:05:16.730 [qtp1955502880-18] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
-2020-04-07 20:05:16.731 [qtp1955502880-18] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
-2020-04-07 20:05:16.736 [qtp1955502880-18] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
-2020-04-07 20:17:38.676 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 20:17:38.745 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 20:17:38.812 [qtp1955502880-22] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
-2020-04-07 20:28:35.695 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 20:28:35.752 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 20:28:35.791 [qtp1352913142-19] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
-2020-04-07 20:37:29.249 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
-2020-04-07 20:37:29.334 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
-2020-04-07 20:37:29.367 [qtp1352913142-18] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 0
+2020-04-21 00:14:54.203 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 00:14:54.209 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 00:14:54.223 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 00:14:54.427 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 00:14:54.428 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 00:14:54.428 [qtp986875962-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 00:14:54.429 [qtp986875962-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 00:14:54.430 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 00:14:54.431 [qtp986875962-20] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 00:14:54.564 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 00:14:54.565 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 00:14:54.566 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 00:14:54.764 [qtp986875962-47] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 00:14:54.765 [qtp986875962-47] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 00:14:54.766 [qtp986875962-47] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 00:14:54.993 [qtp986875962-20] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 00:14:54.993 [qtp986875962-20] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 00:14:54.994 [qtp986875962-45] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 00:14:54.994 [qtp986875962-45] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 00:14:54.995 [qtp986875962-20] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 00:14:54.995 [qtp986875962-45] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 00:14:55.064 [qtp986875962-49] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 00:14:55.065 [qtp986875962-49] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:14:55.066 [qtp986875962-49] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 00:14:55.130 [qtp986875962-47] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 00:14:55.130 [qtp986875962-47] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:14:55.132 [qtp986875962-47] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 00:19:08.041 [qtp986875962-56] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 00:19:08.042 [qtp986875962-56] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 00:19:08.053 [qtp986875962-56] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 00:19:08.117 [qtp986875962-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 00:19:08.117 [qtp986875962-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 00:19:08.117 [qtp986875962-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 00:19:08.118 [qtp986875962-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 00:19:08.120 [qtp986875962-49] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 00:19:08.120 [qtp986875962-50] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 00:19:08.171 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 00:19:08.172 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 00:19:08.173 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 00:19:08.200 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 00:19:08.200 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 00:19:08.201 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 00:19:08.227 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 00:19:08.227 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 00:19:08.228 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 00:19:08.231 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 00:19:08.231 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 00:19:08.232 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 00:19:08.260 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 00:19:08.260 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:19:08.262 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 00:19:08.313 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 00:19:08.313 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:19:08.316 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 00:19:33.811 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 00:19:33.812 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 00:19:33.824 [qtp986875962-54] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 00:19:34.256 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 00:19:34.256 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 00:19:34.259 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 00:19:34.260 [qtp986875962-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 00:19:34.260 [qtp986875962-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 00:19:34.266 [qtp986875962-50] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 00:19:34.445 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 00:19:34.445 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 00:19:34.446 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 00:19:34.482 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 00:19:34.482 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 00:19:34.484 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 00:19:34.547 [qtp986875962-45] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 00:19:34.548 [qtp986875962-45] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 00:19:34.548 [qtp986875962-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 00:19:34.548 [qtp986875962-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 00:19:34.549 [qtp986875962-45] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 00:19:34.549 [qtp986875962-49] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 00:19:34.670 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 00:19:34.671 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:19:34.673 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 00:19:34.762 [qtp986875962-54] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 00:19:34.763 [qtp986875962-54] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:19:34.765 [qtp986875962-54] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 00:23:46.039 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 00:23:46.040 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 00:23:46.055 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 00:23:46.419 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 00:23:46.419 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 00:23:46.420 [qtp986875962-47] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 00:23:46.426 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 00:23:46.426 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 00:23:46.428 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 00:23:46.578 [qtp986875962-54] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 00:23:46.578 [qtp986875962-54] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 00:23:46.579 [qtp986875962-54] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 00:23:46.626 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 00:23:46.626 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 00:23:46.629 [qtp986875962-45] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 00:23:46.663 [qtp986875962-56] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 00:23:46.663 [qtp986875962-56] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 00:23:46.665 [qtp986875962-56] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 00:23:46.672 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 00:23:46.672 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 00:23:46.673 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 00:23:46.755 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 00:23:46.756 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:23:46.758 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 00:23:46.830 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 00:23:46.830 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:23:46.831 [qtp986875962-45] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 00:33:42.199 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 00:33:42.200 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 00:33:42.211 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 00:33:42.537 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 00:33:42.538 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 00:33:42.538 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 00:33:42.538 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 00:33:42.540 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 00:33:42.542 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 00:33:42.621 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 00:33:42.621 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 00:33:42.622 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 00:33:42.686 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 00:33:42.686 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 00:33:42.687 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 00:33:42.728 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 00:33:42.728 [qtp986875962-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 00:33:42.728 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 00:33:42.728 [qtp986875962-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 00:33:42.729 [qtp986875962-47] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 00:33:42.729 [qtp986875962-50] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 00:33:42.866 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 00:33:42.867 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:33:42.868 [qtp986875962-54] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 00:33:42.958 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 00:33:42.958 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 00:33:42.960 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 07:50:14.193 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:50:14.198 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:50:14.226 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:50:14.395 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:50:14.395 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:50:14.398 [qtp986875962-56] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:50:14.403 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:50:14.403 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:50:14.404 [qtp986875962-54] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:50:14.496 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:50:14.496 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:50:14.497 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:50:14.631 [qtp986875962-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:50:14.631 [qtp986875962-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:50:14.632 [qtp986875962-50] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:50:14.834 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:50:14.834 [qtp986875962-56] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:50:14.834 [qtp986875962-56] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:50:14.834 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:50:14.835 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:50:14.835 [qtp986875962-56] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:50:14.933 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 07:50:14.934 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:50:14.937 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 07:50:15.008 [qtp986875962-50] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 07:50:15.009 [qtp986875962-50] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:50:15.010 [qtp986875962-50] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 07:51:23.585 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:51:23.585 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:51:23.594 [qtp986875962-59] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:51:23.785 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:51:23.786 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:51:23.786 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:51:23.786 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:51:23.788 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:51:23.789 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:51:24.034 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:51:24.034 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:51:24.035 [qtp986875962-50] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:51:24.179 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:51:24.180 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:51:24.181 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:51:24.255 [qtp986875962-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:51:24.255 [qtp986875962-62] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:51:24.256 [qtp986875962-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:51:24.256 [qtp986875962-62] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:51:24.257 [qtp986875962-62] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:51:24.257 [qtp986875962-59] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:51:24.342 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 07:51:24.343 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:51:24.344 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 07:51:24.428 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 07:51:24.428 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:51:24.429 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 07:56:16.577 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:56:16.582 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:56:16.590 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:56:16.617 [qtp986875962-62] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:56:16.617 [qtp986875962-62] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:56:16.619 [qtp986875962-62] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:56:16.622 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:56:16.623 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:56:16.625 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:56:16.644 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:56:16.644 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:56:16.645 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:56:16.701 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:56:16.702 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:56:16.702 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:56:16.716 [qtp986875962-62] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:56:16.716 [qtp986875962-62] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:56:16.717 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:56:16.717 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:56:16.717 [qtp986875962-62] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:56:16.718 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:56:18.121 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:56:18.121 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:56:18.129 [qtp986875962-60] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:56:18.314 [qtp986875962-54] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:56:18.315 [qtp986875962-54] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:56:18.316 [qtp986875962-62] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:56:18.316 [qtp986875962-62] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:56:18.316 [qtp986875962-54] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:56:18.318 [qtp986875962-62] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:56:18.422 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:56:18.422 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:56:18.424 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:56:18.560 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:56:18.560 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:56:18.561 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:56:18.775 [qtp986875962-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:56:18.776 [qtp986875962-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:56:18.776 [qtp986875962-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:56:18.776 [qtp986875962-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:56:18.776 [qtp986875962-50] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:56:18.777 [qtp986875962-51] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:56:18.989 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 07:56:18.989 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:56:18.991 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 07:56:19.055 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 07:56:19.055 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:56:19.057 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 07:58:28.602 [qtp986875962-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:58:28.602 [qtp986875962-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:58:28.610 [qtp986875962-65] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:58:28.787 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:58:28.787 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:58:28.787 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:58:28.788 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:58:28.789 [qtp986875962-51] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:58:28.789 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:58:28.919 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:58:28.920 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:58:28.921 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:58:29.007 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:58:29.008 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:58:29.009 [qtp986875962-54] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:58:29.089 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:58:29.089 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:58:29.089 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:58:29.089 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:58:29.091 [qtp986875962-51] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:58:29.092 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:58:29.378 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 07:58:29.379 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:58:29.380 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 07:58:29.462 [qtp986875962-62] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 07:58:29.462 [qtp986875962-62] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:58:29.464 [qtp986875962-62] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 07:59:08.080 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 07:59:08.080 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 07:59:08.090 [qtp986875962-58] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 07:59:08.295 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 07:59:08.296 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 07:59:08.298 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 07:59:08.298 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 07:59:08.298 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 07:59:08.301 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 07:59:08.437 [qtp986875962-62] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 07:59:08.437 [qtp986875962-62] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 07:59:08.438 [qtp986875962-62] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 07:59:08.574 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 07:59:08.574 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 07:59:08.576 [qtp986875962-58] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 07:59:08.755 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 07:59:08.755 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 07:59:08.755 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 07:59:08.755 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 07:59:08.756 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 07:59:08.756 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 07:59:08.851 [qtp986875962-62] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 07:59:08.852 [qtp986875962-62] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:59:08.853 [qtp986875962-62] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 07:59:08.919 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 07:59:08.919 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 07:59:08.920 [qtp986875962-58] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:07:00.062 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:07:00.063 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:07:00.073 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:07:00.283 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:07:00.283 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:07:00.283 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:07:00.284 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:07:00.285 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:07:00.285 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:07:00.407 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:07:00.408 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:07:00.408 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:07:00.544 [qtp986875962-68] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:07:00.545 [qtp986875962-68] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:07:00.546 [qtp986875962-68] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:07:00.743 [qtp986875962-60] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:07:00.743 [qtp986875962-54] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:07:00.743 [qtp986875962-60] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:07:00.743 [qtp986875962-54] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:07:00.744 [qtp986875962-54] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:07:00.744 [qtp986875962-60] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:07:00.914 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:07:00.915 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:07:00.916 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:07:00.963 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:07:00.964 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:07:00.965 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:07:42.813 [qtp986875962-68] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:07:42.813 [qtp986875962-68] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:07:42.823 [qtp986875962-68] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:07:42.995 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:07:42.995 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:07:42.998 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:07:43.037 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:07:43.038 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:07:43.039 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:07:43.213 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:07:43.213 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:07:43.214 [qtp986875962-51] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:07:43.481 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:07:43.481 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:07:43.482 [qtp986875962-60] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:07:43.566 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:07:43.566 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:07:43.567 [qtp986875962-68] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:07:43.567 [qtp986875962-68] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:07:43.567 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:07:43.567 [qtp986875962-68] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:07:43.714 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:07:43.714 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:07:43.715 [qtp986875962-51] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:07:43.792 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:07:43.792 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:07:43.793 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:11:20.780 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:11:20.781 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:11:20.791 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:11:20.973 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:11:20.973 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:11:20.977 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:11:20.980 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:11:20.980 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:11:20.982 [qtp986875962-51] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:11:21.115 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:11:21.115 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:11:21.116 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:11:21.245 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:11:21.245 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:11:21.246 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:11:21.443 [qtp986875962-70] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:11:21.444 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:11:21.444 [qtp986875962-70] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:11:21.444 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:11:21.445 [qtp986875962-58] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:11:21.445 [qtp986875962-70] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:11:21.488 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:11:21.488 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:11:21.489 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:11:21.545 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:11:21.545 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:11:21.546 [qtp986875962-51] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:12:40.694 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:12:40.694 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:12:40.704 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:12:40.917 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:12:40.918 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:12:40.918 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:12:40.918 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:12:40.920 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:12:40.920 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:12:41.037 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:12:41.037 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:12:41.038 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:12:41.182 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:12:41.182 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:12:41.183 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:12:41.345 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:12:41.345 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:12:41.345 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:12:41.345 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:12:41.346 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:12:41.346 [qtp986875962-54] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:12:41.448 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:12:41.449 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:12:41.450 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:12:41.547 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:12:41.547 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:12:41.548 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:14:05.278 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:14:05.278 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:14:05.288 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:14:05.504 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:14:05.504 [qtp986875962-72] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:14:05.505 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:14:05.505 [qtp986875962-72] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:14:05.506 [qtp986875962-72] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:14:05.506 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:14:05.652 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:14:05.652 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:14:05.653 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:14:05.965 [qtp986875962-67] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:14:05.965 [qtp986875962-67] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:14:05.966 [qtp986875962-67] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:14:06.021 [qtp986875962-72] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:14:06.021 [qtp986875962-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:14:06.021 [qtp986875962-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:14:06.021 [qtp986875962-72] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:14:06.022 [qtp986875962-70] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:14:06.022 [qtp986875962-72] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:14:06.100 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:14:06.101 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:14:06.102 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:14:06.161 [qtp986875962-67] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:14:06.161 [qtp986875962-67] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:14:06.162 [qtp986875962-67] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:15:16.829 [qtp986875962-72] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:15:16.829 [qtp986875962-72] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:15:16.838 [qtp986875962-72] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:15:17.051 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:15:17.051 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:15:17.051 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:15:17.051 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:15:17.053 [qtp986875962-58] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:15:17.053 [qtp986875962-60] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:15:17.232 [qtp986875962-67] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:15:17.232 [qtp986875962-67] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:15:17.233 [qtp986875962-67] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:15:17.595 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:15:17.595 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:15:17.598 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:15:17.647 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:15:17.647 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:15:17.648 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:15:17.648 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:15:17.648 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:15:17.648 [qtp986875962-72] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:15:17.770 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:15:17.770 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:15:17.771 [qtp986875962-60] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:15:17.819 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:15:17.820 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:15:17.821 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:16:19.312 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:16:19.312 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:16:19.323 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:16:19.567 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:16:19.567 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:16:19.567 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:16:19.567 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:16:19.570 [qtp986875962-67] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:16:19.570 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:16:19.973 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:16:19.974 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:16:19.975 [qtp986875962-58] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:16:20.065 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:16:20.066 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:16:20.066 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:16:20.156 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:16:20.156 [qtp986875962-75] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:16:20.156 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:16:20.156 [qtp986875962-75] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:16:20.157 [qtp986875962-75] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:16:20.157 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:16:20.250 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:16:20.250 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:16:20.251 [qtp986875962-58] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:16:20.341 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:16:20.341 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:16:20.343 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:17:28.480 [qtp986875962-71] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==>  Preparing: INSERT INTO ap_order(order_id, user_id, order_detail, order_shipping, order_status, order_createtime) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:17:28.482 [qtp986875962-71] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==> Parameters: pi_1GaL2JBpQmDhqaa32j3AUFBb(String), cs_test_0wJSNZzg9wRxid8qAhmRmhiBzH2qMs5VCJpoprmXBhVeTphLKejxDAQS(String), [{"name":"test","description":"Option: 1cm","amount":1112,"quantity":2,"imageUrl":"https://storage.googleapis.com/apera-frontend.appspot.com/images/2f65f432-d275-4377-a286-7a7b29ffa1f5.jpg"}](String), {"city":"asdd","country":"CA","line1":"dassdas","line2":null,"postal_code":"dasd","state":"MB","name":"ddad"}(String), null, 2020-04-21 08:17:28.48(Timestamp)
+2020-04-21 08:17:29.821 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:17:29.821 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:17:29.833 [qtp986875962-67] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:17:30.070 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:17:30.071 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:17:30.072 [qtp986875962-58] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:17:30.072 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:17:30.073 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:17:30.074 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:17:30.206 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:17:30.206 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:17:30.207 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:17:30.335 [qtp986875962-73] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:17:30.335 [qtp986875962-73] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:17:30.336 [qtp986875962-73] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:17:30.518 [qtp986875962-67] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:17:30.518 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:17:30.519 [qtp986875962-67] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:17:30.519 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:17:30.519 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:17:30.520 [qtp986875962-67] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:17:30.625 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:17:30.625 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:17:30.626 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:17:30.755 [qtp986875962-73] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:17:30.756 [qtp986875962-73] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:17:30.757 [qtp986875962-73] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 1
+2020-04-21 08:19:28.968 [qtp986875962-60] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==>  Preparing: INSERT INTO ap_order(order_id, user_id, order_detail, order_shipping, order_status, order_createtime) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:19:28.969 [qtp986875962-60] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==> Parameters: pi_1GaL4EBpQmDhqaa3Ry43bb13(String), d1e660fd-edd8-4746-b0fb-528b69747a80(String), [{"name":"test","description":"Option: 1cm","amount":1112,"quantity":2,"imageUrl":"https://storage.googleapis.com/apera-frontend.appspot.com/images/2f65f432-d275-4377-a286-7a7b29ffa1f5.jpg"}](String), {"city":"dsdad","country":"CA","line1":"dsdadsd","line2":null,"postal_code":"dads","state":"ON","name":"dsda"}(String), null, 2020-04-21 08:19:28.968(Timestamp)
+2020-04-21 08:19:28.973 [qtp986875962-60] DEBUG com.apera.backend.dao.OrderDao.insertOrder - <==    Updates: 1
+2020-04-21 08:19:30.336 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:19:30.336 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:19:30.348 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:19:30.567 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:19:30.568 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:19:30.569 [qtp986875962-73] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:19:30.570 [qtp986875962-73] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:19:30.570 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:19:30.571 [qtp986875962-73] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:19:30.737 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:19:30.737 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:19:30.738 [qtp986875962-60] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:19:31.086 [qtp986875962-76] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:19:31.086 [qtp986875962-76] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:19:31.089 [qtp986875962-76] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:19:31.188 [qtp986875962-73] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:19:31.189 [qtp986875962-73] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:19:31.189 [qtp986875962-74] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:19:31.189 [qtp986875962-74] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:19:31.190 [qtp986875962-73] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:19:31.190 [qtp986875962-74] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:19:31.234 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:19:31.234 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:19:31.235 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:19:31.360 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:19:31.361 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:19:31.362 [qtp986875962-60] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 2
+2020-04-21 08:30:20.497 [qtp986875962-79] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==>  Preparing: INSERT INTO ap_order(order_id, user_id, order_detail, order_shipping, order_status, order_createtime) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:30:20.499 [qtp986875962-79] DEBUG com.apera.backend.dao.OrderDao.insertOrder - ==> Parameters: pi_1GaLEVBpQmDhqaa39Qatt2TB(String), d1e660fd-edd8-4746-b0fb-528b69747a80(String), [{"name":"test","description":"Option: 1cm","amount":1112,"quantity":2,"imageUrl":"https://storage.googleapis.com/apera-frontend.appspot.com/images/2f65f432-d275-4377-a286-7a7b29ffa1f5.jpg"},{"name":"DO850 Portable Dissolved Oxygen Meter Kit","description":"Option: ","amount":99832,"quantity":1,"imageUrl":"https://storage.googleapis.com/apera-frontend.appspot.com/images/853e9d2c-336a-4a46-b9dc-01b9d3015d14.jpg"},{"name":"test","description":"Option: 2cm","amount":1112,"quantity":1,"imageUrl":"https://storage.googleapis.com/apera-frontend.appspot.com/images/2f65f432-d275-4377-a286-7a7b29ffa1f5.jpg"}](String), {"city":"North York","country":"CA","line1":"7 Flavian Crescent","line2":null,"postal_code":"M2H 1V8","state":"ON","name":"Xiang Liu"}(String), null, 2020-04-21 08:30:20.497(Timestamp)
+2020-04-21 08:30:20.502 [qtp986875962-79] DEBUG com.apera.backend.dao.OrderDao.insertOrder - <==    Updates: 1
+2020-04-21 08:30:21.237 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:30:21.237 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:30:21.246 [qtp986875962-76] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:30:21.320 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:30:21.320 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:30:21.322 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:30:21.325 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:30:21.325 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:30:21.326 [qtp986875962-60] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:30:21.399 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:30:21.399 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:30:21.400 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:30:21.422 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:30:21.422 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:30:21.423 [qtp986875962-74] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:30:21.439 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:30:21.440 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:30:21.441 [qtp986875962-64] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:30:21.447 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:30:21.447 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:30:21.448 [qtp986875962-60] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:30:21.474 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:30:21.475 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:30:21.476 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:30:21.535 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:30:21.535 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:30:21.537 [qtp986875962-74] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 08:35:59.508 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.updateUser - ==>  Preparing: update ap_user SET user_firstname = ?, user_lastname = ?, user_email = ? WHERE user_id = ? 
+2020-04-21 08:35:59.509 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.updateUser - ==> Parameters: Manager(String), (String), garrikliu123@gmail.com(String), d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:35:59.510 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.updateUser - <==    Updates: 1
+2020-04-21 08:36:45.777 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.insertUser - ==>  Preparing: INSERT INTO ap_user(user_id, user_firstname, user_lastname, user_email, user_password, user_type) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:36:45.777 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.insertUser - ==> Parameters: 130b9e8f-494c-49cc-b4c8-9dc1e1809893(String), null, null, garrikliu@gmail.com(String), 123456(String), null
+2020-04-21 08:36:45.779 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.insertUser - <==    Updates: 1
+2020-04-21 08:36:50.245 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.insertUser - ==>  Preparing: INSERT INTO ap_user(user_id, user_firstname, user_lastname, user_email, user_password, user_type) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:36:50.246 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.insertUser - ==> Parameters: f07c91fb-7b4b-4b1e-a644-2878a5c12b3f(String), null, null, garrikliu@gmail.com(String), 123456(String), null
+2020-04-21 08:36:50.252 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.insertUser - <==    Updates: 1
+2020-04-21 08:42:01.049 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.insertUser - ==>  Preparing: INSERT INTO ap_user(user_id, user_firstname, user_lastname, user_email, user_password, user_type) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:42:01.052 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.insertUser - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String), null, null, garrikliu@gmail.com(String), 123456(String), null
+2020-04-21 08:42:01.054 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.insertUser - <==    Updates: 1
+2020-04-21 08:42:05.105 [qtp986875962-79] DEBUG com.apera.backend.dao.UserDao.insertUser - ==>  Preparing: INSERT INTO ap_user(user_id, user_firstname, user_lastname, user_email, user_password, user_type) VALUES (?, ?, ?, ?, ?, ?) 
+2020-04-21 08:42:05.105 [qtp986875962-79] DEBUG com.apera.backend.dao.UserDao.insertUser - ==> Parameters: 51dfa0d6-ccb0-4789-92b8-9b14682cd7ef(String), null, null, garrikliu@gmail.com(String), 123456(String), null
+2020-04-21 08:42:25.951 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:42:25.951 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu@gmail.com(String)
+2020-04-21 08:42:25.953 [qtp986875962-64] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:42:55.982 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:42:55.982 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
+2020-04-21 08:42:55.983 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:48:02.212 [qtp986875962-80] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:48:02.218 [qtp986875962-80] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:48:02.228 [qtp986875962-80] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:48:02.327 [qtp986875962-79] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:48:02.327 [qtp986875962-79] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:48:02.329 [qtp986875962-79] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:48:02.336 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:48:02.336 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:48:02.338 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:48:02.397 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:48:02.398 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:48:02.399 [qtp986875962-77] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:48:02.418 [qtp986875962-81] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:48:02.419 [qtp986875962-81] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:48:02.420 [qtp986875962-81] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:48:02.454 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:48:02.455 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:48:02.455 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:48:02.455 [qtp986875962-71] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:48:02.455 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:48:02.456 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:48:02.481 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:48:02.481 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:48:02.482 [qtp986875962-77] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:48:02.574 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:48:02.574 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:48:02.576 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 08:48:12.789 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:48:12.790 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu@gmail.com(String)
+2020-04-21 08:48:12.791 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:48:36.996 [qtp986875962-82] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:48:36.996 [qtp986875962-82] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:48:37.005 [qtp986875962-82] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:48:37.354 [qtp986875962-77] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:48:37.354 [qtp986875962-77] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:48:37.356 [qtp986875962-77] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:48:37.356 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:48:37.357 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:48:37.358 [qtp986875962-64] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:48:37.497 [qtp986875962-81] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:48:37.497 [qtp986875962-81] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:48:37.498 [qtp986875962-81] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:48:37.592 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:48:37.592 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:48:37.593 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:48:37.658 [qtp986875962-79] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:48:37.658 [qtp986875962-77] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:48:37.658 [qtp986875962-77] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:48:37.658 [qtp986875962-79] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:48:37.659 [qtp986875962-77] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:48:37.659 [qtp986875962-79] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:48:37.773 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:48:37.774 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:48:37.775 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:48:37.823 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:48:37.824 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:48:37.825 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 0
+2020-04-21 08:48:48.295 [qtp986875962-77] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:48:48.296 [qtp986875962-77] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:48:48.305 [qtp986875962-77] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:48:48.694 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:48:48.694 [qtp986875962-81] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:48:48.694 [qtp986875962-81] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:48:48.694 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:48:48.696 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:48:48.696 [qtp986875962-81] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:48:48.782 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:48:48.782 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:48:48.784 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:48:48.984 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:48:48.984 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:48:48.986 [qtp986875962-82] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:48:49.178 [qtp986875962-77] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:48:49.178 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:48:49.178 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:48:49.178 [qtp986875962-77] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:48:49.179 [qtp986875962-79] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:48:49.179 [qtp986875962-77] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:48:49.271 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:48:49.271 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:48:49.272 [qtp986875962-81] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:48:49.408 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:48:49.408 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:48:49.409 [qtp986875962-71] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 0
+2020-04-21 08:50:04.857 [qtp986875962-84] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:50:04.858 [qtp986875962-84] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:50:04.866 [qtp986875962-84] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:50:05.289 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:50:05.289 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:50:05.290 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:50:05.290 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:50:05.292 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:50:05.293 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:50:05.595 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:50:05.596 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:50:05.596 [qtp986875962-71] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:50:05.805 [qtp986875962-79] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:50:05.805 [qtp986875962-79] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:50:05.806 [qtp986875962-79] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:50:05.837 [qtp986875962-83] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:50:05.838 [qtp986875962-83] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:50:05.837 [qtp986875962-81] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:50:05.838 [qtp986875962-81] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:50:05.839 [qtp986875962-83] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:50:05.839 [qtp986875962-81] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:50:05.925 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:50:05.925 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:50:05.926 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:50:06.022 [qtp986875962-79] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:50:06.022 [qtp986875962-79] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:50:06.023 [qtp986875962-79] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 0
+2020-04-21 08:51:17.024 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:51:17.025 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:51:17.036 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:51:17.590 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:51:17.590 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:51:17.593 [qtp986875962-64] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:51:17.593 [qtp986875962-71] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:51:17.594 [qtp986875962-71] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:51:17.596 [qtp986875962-71] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:51:17.789 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:51:17.789 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:51:17.790 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:51:17.888 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:51:17.889 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:51:17.889 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:51:17.958 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:51:17.958 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:51:17.959 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:51:17.959 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:51:17.960 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:51:17.960 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:51:18.021 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:51:18.021 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:51:18.022 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:51:18.128 [qtp986875962-82] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:51:18.128 [qtp986875962-82] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:51:18.130 [qtp986875962-82] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 0
+2020-04-21 08:51:27.697 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:51:27.697 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
+2020-04-21 08:51:27.699 [qtp986875962-80] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:51:41.364 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:51:41.365 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:51:41.375 [qtp986875962-64] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:51:41.752 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:51:41.752 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:51:41.753 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:51:41.753 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:51:41.753 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:51:41.753 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:51:41.807 [qtp986875962-83] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:51:41.807 [qtp986875962-83] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:51:41.808 [qtp986875962-83] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:51:41.924 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:51:41.924 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:51:41.926 [qtp986875962-64] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:51:42.006 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:51:42.006 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:51:42.006 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:51:42.006 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:51:42.007 [qtp986875962-80] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:51:42.007 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:51:42.100 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:51:42.100 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:51:42.102 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:51:42.207 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:51:42.207 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:51:42.209 [qtp986875962-64] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 08:51:57.653 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 08:51:57.653 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 08:51:57.664 [qtp986875962-83] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 08:51:58.120 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 08:51:58.121 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 08:51:58.123 [qtp986875962-71] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 08:51:58.127 [qtp986875962-85] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 08:51:58.128 [qtp986875962-85] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 08:51:58.129 [qtp986875962-85] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 08:51:58.414 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 08:51:58.414 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 08:51:58.415 [qtp986875962-82] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 08:51:58.556 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 08:51:58.556 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 08:51:58.557 [qtp986875962-83] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 08:51:58.615 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 08:51:58.616 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 08:51:58.616 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 08:51:58.617 [qtp986875962-64] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 08:51:58.617 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 08:51:58.619 [qtp986875962-85] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 08:51:58.656 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 08:51:58.656 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:51:58.657 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 08:51:58.730 [qtp986875962-83] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:51:58.731 [qtp986875962-83] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:51:58.732 [qtp986875962-83] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 08:53:09.075 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:53:09.076 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
+2020-04-21 08:53:09.077 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:53:09.158 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:53:09.158 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:53:09.160 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 08:53:23.214 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:53:23.214 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu@gmail.com(String)
+2020-04-21 08:53:23.215 [qtp986875962-71] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:53:23.279 [qtp986875962-80] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:53:23.279 [qtp986875962-80] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: dce2f7c2-c99b-4ec0-8679-0f1d20637ca7(String)
+2020-04-21 08:53:23.280 [qtp986875962-80] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 0
+2020-04-21 08:54:15.096 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==>  Preparing: SELECT * FROM ap_user WHERE user_email = ? 
+2020-04-21 08:54:15.096 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - ==> Parameters: garrikliu123@gmail.com(String)
+2020-04-21 08:54:15.098 [qtp986875962-82] DEBUG com.apera.backend.dao.UserDao.queryUserByEmail - <==      Total: 1
+2020-04-21 08:54:15.177 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 08:54:15.177 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 08:54:15.179 [qtp986875962-85] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3
+2020-04-21 09:02:13.352 [qtp986875962-87] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==>  Preparing: SELECT * FROM ap_product ORDER BY product_createtime DESC; 
+2020-04-21 09:02:13.352 [qtp986875962-87] DEBUG com.apera.backend.dao.ProductDao.queryProductList - ==> Parameters: 
+2020-04-21 09:02:13.365 [qtp986875962-87] DEBUG com.apera.backend.dao.ProductDao.queryProductList - <==      Total: 3
+2020-04-21 09:02:13.520 [qtp986875962-80] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==>  Preparing: SELECT * FROM ap_product_category 
+2020-04-21 09:02:13.520 [qtp986875962-80] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - ==> Parameters: 
+2020-04-21 09:02:13.522 [qtp986875962-80] DEBUG c.a.b.d.ProductCategoryDao.queryAllProductCategory - <==      Total: 3
+2020-04-21 09:02:13.523 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==>  Preparing: SELECT * FROM ap_category ORDER BY category_name; 
+2020-04-21 09:02:13.523 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - ==> Parameters: 
+2020-04-21 09:02:13.525 [qtp986875962-82] DEBUG c.apera.backend.dao.CategoryDao.queryCategoryList - <==      Total: 1
+2020-04-21 09:02:13.564 [qtp986875962-85] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==>  Preparing: SELECT * FROM ap_article 
+2020-04-21 09:02:13.565 [qtp986875962-85] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - ==> Parameters: 
+2020-04-21 09:02:13.566 [qtp986875962-85] DEBUG com.apera.backend.dao.ArticleDao.queryArticleList - <==      Total: 2
+2020-04-21 09:02:13.590 [qtp986875962-86] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==>  Preparing: SELECT * FROM ap_topic ORDER BY topic_name ASC 
+2020-04-21 09:02:13.590 [qtp986875962-86] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - ==> Parameters: 
+2020-04-21 09:02:13.591 [qtp986875962-86] DEBUG com.apera.backend.dao.TopicDao.queryTopicList - <==      Total: 1
+2020-04-21 09:02:13.618 [qtp986875962-84] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==>  Preparing: SELECT * FROM ap_topic_category 
+2020-04-21 09:02:13.618 [qtp986875962-84] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - ==> Parameters: 
+2020-04-21 09:02:13.620 [qtp986875962-84] DEBUG c.a.b.dao.TopicCategoryDao.queryAllTopicCategory - <==      Total: 1
+2020-04-21 09:02:13.627 [qtp986875962-82] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==>  Preparing: SELECT * FROM ap_home_section 
+2020-04-21 09:02:13.627 [qtp986875962-82] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - ==> Parameters: 
+2020-04-21 09:02:13.628 [qtp986875962-82] DEBUG c.a.backend.dao.HomeSectionDao.querySectionList - <==      Total: 0
+2020-04-21 09:02:13.658 [qtp986875962-83] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==>  Preparing: SELECT * FROM ap_user WHERE user_id = ? 
+2020-04-21 09:02:13.659 [qtp986875962-83] DEBUG com.apera.backend.dao.UserDao.queryUserById - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 09:02:13.660 [qtp986875962-83] DEBUG com.apera.backend.dao.UserDao.queryUserById - <==      Total: 1
+2020-04-21 09:02:13.728 [qtp986875962-86] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==>  Preparing: SELECT * FROM ap_order WHERE user_id = ? ORDER BY order_createtime DESC; 
+2020-04-21 09:02:13.728 [qtp986875962-86] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - ==> Parameters: d1e660fd-edd8-4746-b0fb-528b69747a80(String)
+2020-04-21 09:02:13.730 [qtp986875962-86] DEBUG c.a.backend.dao.OrderDao.queryOrderListByUserId - <==      Total: 3

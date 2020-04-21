@@ -56,6 +56,30 @@ public class UserService {
     }
   }
 
+  public UserExecution getUserById(String userId) {
+    boolean success = false;
+    User user = null;
+
+    try {
+      user = userDao.queryUserById(userId);
+
+      if (user == null) {
+        throw new RuntimeException("User does not exist");
+      } else {
+        success = true;
+      }
+
+    } catch (Exception e) {
+      throw new RuntimeException(e.getMessage());
+    }
+
+    if (success) {
+      return new UserExecution(UserStateEnum.SUCCESS, user);
+    } else {
+      return new UserExecution(UserStateEnum.ERROR);
+    }
+  }
+
   @Transactional
   public UserExecution addUser(User user) throws RuntimeException {
     boolean success = false;

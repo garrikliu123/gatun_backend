@@ -130,6 +130,7 @@ public class UserController {
 
       for (User u : ce.getUserList()) {
         User user = new User();
+        user.setUserId(u.getUserId());
         user.setUserEmail(u.getUserEmail());
         list.add(user);
       }
@@ -169,12 +170,9 @@ public class UserController {
       if (ce.getState() == UserStateEnum.SUCCESS.getState()) {
         User dbUser = ce.getUser();
         if (dbUser.getUserPassword().equals(user.getUserPassword())) {
+          dbUser.setUserPassword("");
           modelMap.put("success", true);
-          if ("manager".equals(dbUser.getUserType())) {
-            modelMap.put("isManager", true);
-          } else {
-            modelMap.put("isManager", false);
-          }
+          modelMap.put("user", dbUser);
         } else {
           modelMap.put("success", false);
           modelMap.put("errMsg", "Password is wrong");
@@ -204,7 +202,35 @@ public class UserController {
         user.setUserPassword("");
 
         modelMap.put("success", true);
-        modelMap.put("data", user);
+        modelMap.put("user", user);
+      } else {
+        modelMap.put("success", false);
+        modelMap.put("errMsg", "get user failed");
+      }
+    } catch (RuntimeException e) {
+      modelMap.put("success", false);
+      modelMap.put("errMsg", e.getMessage());
+    }
+
+    return modelMap;
+  }
+
+  // 获取分类列表
+  @RequestMapping(value = "/getUserById", method = RequestMethod.GET)
+  @ResponseBody
+  private Map<String, Object> getUserById(String userId) {
+    Map<String, Object> modelMap = new HashMap<String, Object>();
+    User user = null;
+
+    try {
+      UserExecution ce = userService.getUserById(userId);
+      if (ce.getState() == UserStateEnum.SUCCESS.getState()) {
+        user = ce.getUser();
+
+        user.setUserPassword("");
+
+        modelMap.put("success", true);
+        modelMap.put("user", user);
       } else {
         modelMap.put("success", false);
         modelMap.put("errMsg", "get user failed");

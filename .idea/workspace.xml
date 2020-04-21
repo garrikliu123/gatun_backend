@@ -7,10 +7,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28d9dbc9-a221-41d3-9bb7-5dfc815f1300" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd78c980-2a87-4504-9110-fcd4f3ee02fc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dd78c980-2a87-4504-9110-fcd4f3ee02fc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apera/backend/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apera/backend/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apera/backend/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apera/backend/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apera/backend/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apera/backend/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apera/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apera/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/apera/backend/web/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/apera/backend/web/user/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/apera-backend.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apera/backend/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apera/backend/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apera/backend/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apera/backend/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apera/backend/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apera/backend/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apera/backend/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apera/backend/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/apera/backend/web/user/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/apera/backend/web/user/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/apera/backend/BaseTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../apera-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../apera-frontend" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +103,9 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1Za6Fw4GXbNbMCgAYd37EtjjjQr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -328,7 +355,10 @@
       <workItem from="1585759801994" duration="29379000" />
       <workItem from="1585980055212" duration="20454000" />
       <workItem from="1586285716024" duration="7332000" />
-      <workItem from="1586304301378" duration="1869000" />
+      <workItem from="1586304301378" duration="3868000" />
+      <workItem from="1586475482885" duration="27000" />
+      <workItem from="1587236259005" duration="8566000" />
+      <workItem from="1587418620571" duration="8346000" />
     </task>
     <servers />
   </component>
@@ -352,10 +382,10 @@
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
     <state x="1623" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1057@0.23.2560.1057" timestamp="1585981244263" />
-    <state x="1733" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1586223588208">
+    <state x="1733" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1587435847580">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state x="1733" y="242" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1057@0.23.2560.1057" timestamp="1586223588208" />
+    <state x="1733" y="242" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1057@0.23.2560.1057" timestamp="1587435847580" />
     <state x="1469" y="484" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585065601659">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
@@ -364,22 +394,22 @@
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
     <state x="1708" y="418" width="423" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.2560.1057@0.23.2560.1057" timestamp="1585932743166" />
-    <state width="1238" height="372" key="GridCell.Tab.0.bottom" timestamp="1586306425119">
+    <state width="1238" height="372" key="GridCell.Tab.0.bottom" timestamp="1587436564763">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.bottom/0.23.2560.1057@0.23.2560.1057" timestamp="1586306425119" />
-    <state width="1238" height="372" key="GridCell.Tab.0.center" timestamp="1586306425118">
+    <state width="1238" height="372" key="GridCell.Tab.0.bottom/0.23.2560.1057@0.23.2560.1057" timestamp="1587436564763" />
+    <state width="1238" height="372" key="GridCell.Tab.0.center" timestamp="1587436564762">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.center/0.23.2560.1057@0.23.2560.1057" timestamp="1586306425118" />
-    <state width="1238" height="372" key="GridCell.Tab.0.left" timestamp="1586306425118">
+    <state width="1238" height="372" key="GridCell.Tab.0.center/0.23.2560.1057@0.23.2560.1057" timestamp="1587436564762" />
+    <state width="1238" height="372" key="GridCell.Tab.0.left" timestamp="1587436564762">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.left/0.23.2560.1057@0.23.2560.1057" timestamp="1586306425118" />
-    <state width="1238" height="372" key="GridCell.Tab.0.right" timestamp="1586306425119">
+    <state width="1238" height="372" key="GridCell.Tab.0.left/0.23.2560.1057@0.23.2560.1057" timestamp="1587436564762" />
+    <state width="1238" height="372" key="GridCell.Tab.0.right" timestamp="1587436564763">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state width="1238" height="372" key="GridCell.Tab.0.right/0.23.2560.1057@0.23.2560.1057" timestamp="1586306425119" />
+    <state width="1238" height="372" key="GridCell.Tab.0.right/0.23.2560.1057@0.23.2560.1057" timestamp="1587436564763" />
     <state width="846" height="265" key="GridCell.Tab.1.bottom" timestamp="1586304296878">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
@@ -420,10 +450,10 @@
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
     <state x="1429" y="190" key="SettingsEditor/0.23.2560.1057@0.23.2560.1057" timestamp="1585067044400" />
-    <state x="1613" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1585980056211">
+    <state x="1613" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1587418632263">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>
-    <state x="1613" y="384" key="com.intellij.ide.util.TipDialog/0.23.2560.1057@0.23.2560.1057" timestamp="1585980056211" />
+    <state x="1613" y="384" key="com.intellij.ide.util.TipDialog/0.23.2560.1057@0.23.2560.1057" timestamp="1587418632263" />
     <state x="1628" y="174" key="refactoring.ChangeSignatureDialog" timestamp="1586223708352">
       <screen x="0" y="23" width="2560" height="1057" />
     </state>

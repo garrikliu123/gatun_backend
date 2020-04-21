@@ -11,6 +11,8 @@ public class Product {
   private String productFeatures;
   private String productVideo;
   private String productImages;
+  private String productFiles;
+  private String productOptions;
   private Double productPrice;
   private Date createTime;
 
@@ -92,6 +94,22 @@ public class Product {
 
   public void setProductImages(String productImages) {
     this.productImages = productImages;
+  }
+
+  public String getProductFiles() {
+    return productFiles;
+  }
+
+  public void setProductFiles(String productFiles) {
+    this.productFiles = productFiles;
+  }
+
+  public String getProductOptions() {
+    return productOptions;
+  }
+
+  public void setProductOptions(String productOptions) {
+    this.productOptions = productOptions;
   }
 
   @Override
