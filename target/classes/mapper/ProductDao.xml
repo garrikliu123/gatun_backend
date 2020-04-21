@@ -21,7 +21,7 @@
     <select id="queryProductList" resultType="com.apera.backend.entity.Product" resultMap="productMap">
         SELECT *
         FROM ap_product
-        ORDER BY product_createtime DESC;
+        ORDER BY product_name;
     </select>
 
     <select id="queryProductById" resultMap="productMap"
