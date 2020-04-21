@@ -136,9 +136,11 @@ public class TopicController {
     String topicId = (String) obj.get("topicId");
 
     try {
-      TopicExecution ce = topicService.deleteTopic(topicId);
+      TopicCategoryExecution ce1 = topicCategoryService.deleteTopicCategoryByTopicId(topicId);
+      TopicExecution ce2 = topicService.deleteTopic(topicId);
 
-      if (ce.getState() == TopicStateEnum.SUCCESS.getState()) {
+      if (ce1.getState() == TopicStateEnum.SUCCESS.getState()
+          && ce2.getState() == TopicStateEnum.SUCCESS.getState()) {
         modelMap.put("success", true);
       }
     } catch (RuntimeException e) {
