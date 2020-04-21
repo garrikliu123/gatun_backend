@@ -13,6 +13,8 @@
         <result column="product_video" property="productVideo"/>
         <result column="product_price" property="productPrice"/>
         <result column="product_images" property="productImages"/>
+        <result column="product_files" property="productFiles"/>
+        <result column="product_options" property="productOptions"/>
         <result column="product_createtime" property="createTime"/>
     </resultMap>
 
@@ -32,10 +34,11 @@
     <insert id="insertProduct" parameterType="com.apera.backend.entity.Product">
         INSERT INTO ap_product(product_id, product_name, product_desc, product_specs,
                                product_warranty, product_features, product_video, product_price, product_images,
-                               product_createtime)
+                               product_files, product_options, product_createtime)
         VALUES (#{productId}, #{productName}, #{productDesc}, #{productSpecs},
                 #{productWarranty}, #{productFeatures}, #{productVideo}, #{productPrice}, #{productImages},
-                #{createTime})
+                #{productFiles},
+                #{productOptions}, #{createTime})
     </insert>
 
     <update id="updateProduct" parameterType="com.apera.backend.entity.Product">
@@ -48,7 +51,9 @@
             <if test="productFeatures != null">product_features = #{productFeatures},</if>
             <if test="productVideo != null">product_video = #{productVideo},</if>
             <if test="productPrice != null">product_price = #{productPrice},</if>
-            <if test="productImages != null">product_images = #{productImages}</if>
+            <if test="productImages != null">product_images = #{productImages},</if>
+            <if test="productImages != null">product_files = #{productFiles},</if>
+            <if test="productImages != null">product_options = #{productOptions}</if>
         </set>
         WHERE product_id = #{productId}
     </update>
